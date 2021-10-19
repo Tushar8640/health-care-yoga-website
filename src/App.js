@@ -11,6 +11,7 @@ import ContextProvider from "./Context/ContextProvider";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import Details from "./Pages/Details/Details";
 import Contact from "./Pages/Contact/Contact.";
+import NotFound from "./Pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -41,7 +42,7 @@ function App() {
           </Route>
 
           <Route exact path="*">
-            <h1>Not found</h1>
+            <NotFound></NotFound>
           </Route>
         </Switch>
         <Footer></Footer>

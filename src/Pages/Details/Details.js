@@ -23,6 +23,13 @@ const Details = () => {
                     <h2 className="md:text-3xl text-xl font-medium">Price : {singleDetails[0]?.price}</h2>
                     <h2 className="md:text-3xl text-xl my-4">{singleDetails[0]?.lessons}</h2>
                     <h2 className="md:text-3xl text-xl my-4">{singleDetails[0]?.students}</h2>
+
+                    <button
+                
+                className="py-2 px-4  bg-gray-500 hover:bg-gray-700 focus:ring-gray-700 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+              >
+                Bye Now
+              </button>
                 </div>
             </div>
 
