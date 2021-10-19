@@ -1,0 +1,74 @@
+[
+    {
+      "id": 0,
+      "price": "$39",
+      "picture": "https://i.ibb.co/Dfvymgh/img-3.jpg",
+      "name": "Yamas and Niyamas",
+      "teacher": "Lessie Ayers",
+      "catagory": "Meditation, Pranayama",
+      "lessons": "7 Lessons",
+      "students": "140 Students Enrolled",
+      "about": "Learn the foundations of yoga in this online course",
+      "details": "Sit anim irure est eiusmod sunt proident ex ullamco officia sunt ea in. Incididunt ipsum dolor sint quis. Qui eiusmod labore qui exercitation."
+    },
+    {
+      "id": 1,
+      "price": "$20",
+      "picture": "https://i.ibb.co/sFr2PGs/img-5.jpg",
+      "name": "Yoga for Beginners Course",
+      "teacher": "Mcintosh Leonard",
+      "catagory": "Perry Hanson",
+      "lessons": "9 Lessons",
+      "students": "100 Students Enrolled",
+      "about": "Learn the foundations of yoga in this online course",
+      "details": "Sint tempor incididunt laboris nostrud. Commodo culpa nulla elit laborum quis ad aute. Culpa do ipsum consequat labore est aliqua officia in incididunt aute ullamco. Magna nulla aliquip labore commodo minim veniam occaecat Lorem aliqua adipisicing sunt. Est est ut est velit qui esse aliqua."
+    },
+    {
+      "id": 3,
+      "price": "$59",
+      "picture": "https://i.ibb.co/DYz245n/img-4.jpg",
+      "name": "The Smart Flow Yoga",
+      "teacher": "Mcintosh Leonard",
+      "catagory": "Meditation, Vinyasa Yoga",
+      "lessons": "11 Lessons",
+      "students": "40 Students Enrolled",
+      "about": "Learn the foundations of yoga in this online course",
+      "details": "Sint tempor incididunt laboris nostrud. Commodo culpa nulla elit laborum quis ad aute. Culpa do ipsum consequat labore est aliqua officia in incididunt aute ullamco. Magna nulla aliquip labore commodo minim veniam occaecat Lorem aliqua adipisicing sunt. Est est ut est velit qui esse aliqua."
+    },
+    {
+      "id": 4,
+      "price": "$49",
+      "picture": "https://i.ibb.co/WWymFhq/img-2.jpg",
+      "name": "Nine days of Pranayama",
+      "teacher": "Mcintosh Leonard",
+      "catagory": "Pranayama, Vinyasa Yoga",
+      "lessons": "11 Lessons",
+      "students": "50 Students Enrolled",
+      "about": "Learn the foundations of yoga in this online course",
+      "details": "Sint tempor incididunt laboris nostrud. Commodo culpa nulla elit laborum quis ad aute. Culpa do ipsum consequat labore est aliqua officia in incididunt aute ullamco. Magna nulla aliquip labore commodo minim veniam occaecat Lorem aliqua adipisicing sunt. Est est ut est velit qui esse aliqua."
+    },
+    {
+      "id": 5,
+      "price": "$39",
+      "picture": "https://i.ibb.co/7ncCSYg/img-6.jpg",
+      "name": "Mastering Anxiety",
+      "teacher": "Lori Mendoza",
+      "catagory": "Meditation, Pranayama",
+      "lessons": "11 Lessons",
+      "students": "50 Students Enrolled",
+      "about": "Learn the foundations of yoga in this online course",
+      "details": "Sint tempor incididunt laboris nostrud. Commodo culpa nulla elit laborum quis ad aute. Culpa do ipsum consequat labore est aliqua officia in incididunt aute ullamco. Magna nulla aliquip labore commodo minim veniam occaecat Lorem aliqua adipisicing sunt. Est est ut est velit qui esse aliqua."
+    },
+    {
+      "id": 6,
+      "price": "$49",
+      "picture": "https://i.ibb.co/7JcWj4j/img-1.jpg",
+      "name": "Yoga For Better Sleep",
+      "teacher": "Mildred Reed",
+      "catagory": "Vinyasa Yoga",
+      "lessons": "6 Lessons",
+      "students": "56 Students Enrolled",
+      "about": "Learn the foundations of yoga in this online course",
+      "details": "Sint tempor incididunt laboris nostrud. Commodo culpa nulla elit laborum quis ad aute. Culpa do ipsum consequat labore est aliqua officia in incididunt aute ullamco. Magna nulla aliquip labore commodo minim veniam occaecat Lorem aliqua adipisicing sunt. Est est ut est velit qui esse aliqua."
+    }
+  ]
