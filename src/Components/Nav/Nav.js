@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import useAuth from "../../Hooks/useAuth";
 import useFirebase from "../../Hooks/useFirebase";
 import logo from "../../images/logo.png";
 
 const Nav = () => {
-  const { user, logOut } = useFirebase();
+  const { user, logOut } = useAuth();
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const handleLogOut = () => {
@@ -47,14 +48,14 @@ const Nav = () => {
             </li>
             {!user.email &&
               <li className="md:inline-block cursor-pointer hover:text-gray-500  md:border-none py-2 px-3">
-                <Link className="font-semibold" to="/login">
+                <Link  className="border border-gray-500 rounded px-2 py-1 hover:bg-gray-500 transition duration-100 hover:text-white font-semibold" to="/login">
                   Login
                 </Link>
               </li>
 }
             {user.email &&
               <li className="md:inline-block cursor-pointer hover:text-gray-500  md:border-none py-2 px-3">
-                <button onClick={handleLogOut}>Log Out</button>
+                <button className="border border-gray-500 rounded px-2 py-1 hover:bg-gray-500 transition duration-100 hover:text-white " onClick={handleLogOut}>Log Out</button>
               </li>
 }
             

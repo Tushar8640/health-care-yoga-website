@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import useFirebase from "../../Hooks/useFirebase";
 
 const Register = () => {
-  const { setEmail, setPassword, registration, user,setName } = useFirebase();
+  const [confirm, setConfirm] = useState("");
+  const { setEmail, setPassword, registration, user, setName, error } =
+    useFirebase();
   const handleRegistration = (e) => {
     e.preventDefault();
     registration();
-    
-
   };
 
   const getName = (e) => {
@@ -30,6 +31,7 @@ const Register = () => {
               Name :
             </label>
             <input
+              required
               onBlur={getName}
               className="shadow-inner border-gray-200 py-2 px-4 border-0 mb-3"
               type="text"
@@ -41,6 +43,9 @@ const Register = () => {
               Email :
             </label>
             <input
+            title="Please Input valid Email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              required
               onBlur={getEmail}
               className="shadow-inner py-2 px-4 border border-gray-200 mb-3"
               placeholder="Your Email"
@@ -53,6 +58,9 @@ const Register = () => {
               Password :
             </label>
             <input
+              required
+              pattern=".{6,}"
+              title="Six or more characters"
               onBlur={getPassword}
               className="shadow-inner border-gray-200 py-2 px-4 border-0 mb-4"
               placeholder="Your Password"
@@ -66,8 +74,9 @@ const Register = () => {
               SignUp
             </button>
             <br />
+            <p className="text-red-600">{error}</p>
             <Link to="/login">
-              <p className="mt-3">Already have account?</p>
+              <p className="mt-3 font-medium">Already have account?</p>
             </Link>
           </form>
         </div>

@@ -14,41 +14,20 @@ import { useEffect, useState } from "react";
 firebaseAuthenticaton();
 const useFirebase = () => {
   const [user, setUser] = useState([]);
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [name, setName] = useState("");
+  const [error, setError] = useState("");
 
   const auth = getAuth();
   const googleProvider = new GoogleAuthProvider();
 
   const loginWithGoogle = () => {
-    signInWithPopup(auth, googleProvider)
-      .then((result) => {
-        setUser(result.user);
-      })
-      .catch((error) => {
-        // Handle Errors here.
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorMessage);
-        console.log(errorCode);
-
-        // ...
-      });
+    return signInWithPopup(auth, googleProvider) 
   };
+
   const loginWithEmailPass = () => {
-    signInWithEmailAndPassword(auth, email, password)
-      .then((result) => {
-        // Signed in
-        setUser(result.user);
-        console.log("successfully Log in")
-        // ...
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorCode, errorMessage);
-      });
+    return signInWithEmailAndPassword(auth, email, password);
   };
 
   const registration = () => {
@@ -56,28 +35,28 @@ const useFirebase = () => {
       .then((result) => {
         // Signed in
         // setUser(result.user);
-        updateName()
-        setUser([])
+        updateName();
+        // setUser([]);
         // ...
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        console.log(errorCode, errorMessage);
+        setError(errorMessage);
         // ..
       });
   };
 
   const updateName = () => {
     updateProfile(auth.currentUser, {
-      displayName:  name
+      displayName: name,
     })
       .then(() => {
         // Profile updated!
         // ...
       })
       .catch((error) => {
-        console.log(error.message);
+        setError(error.message);
         // An error occurred
         // ...
       });
@@ -86,12 +65,15 @@ const useFirebase = () => {
   const logOut = () => {
     signOut(auth)
       .then(() => {
+        setUser([]);
+        window.location.reload(false)
         // Sign-out successful.
       })
       .catch((error) => {
+        setError(error.message);
         // An error happened.
       });
-    setUser([]);
+    
   };
 
   useEffect(() => {
@@ -112,9 +94,11 @@ const useFirebase = () => {
     setEmail,
     setPassword,
     registration,
-
+    setUser,
     setName,
     loginWithEmailPass,
+    setError,
+    error,
   };
 };
 

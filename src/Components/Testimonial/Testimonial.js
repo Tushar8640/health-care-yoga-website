@@ -12,10 +12,7 @@ const Testimonial = () => {
         {/* single testimonia */}
         <div className="shadow-lg p-4">
           <h3>
-            The Yoga Yajnavalkya is another early text on yoga that provides
-            description of Yoga techniques and its benefits. Two of its Sanskrit
-            palm-leaf manuscripts have been dated, one is from the early
-            10th-century CE and another more{" "}
+          This RYT Program with Synergy Yoga is a great place to grid the frequency of your purpose into being. This isn't just a teacher training it's an energetic gridding that you will take with you for a lifetime. Many of the things I learned fully sinked in months and even years after this program. 
           </h3>
           <div
             className=" my-3
@@ -35,10 +32,7 @@ const Testimonial = () => {
         {/* single testimonia */}
         <div className="shadow-lg p-4">
           <h3>
-            The Yoga Yajnavalkya is another early text on yoga that provides
-            description of Yoga techniques and its benefits. Two of its Sanskrit
-            palm-leaf manuscripts have been dated, one is from the early
-            10th-century CE and another more{" "}
+          I just completed the 200 hour yoga teacher training here. The quality of the training exceeded my expectations. Victoria is simply amazing and full of knowledge, energy, and passion for yoga and for her students. I highly recommend doing classes and any of the trainings. The studio is very intimate and welcoming.
           </h3>
           <div
             className=" my-3
@@ -58,10 +52,7 @@ const Testimonial = () => {
         {/* single testimonia */}
         <div className="shadow-lg p-4">
           <h3>
-            The Yoga Yajnavalkya is another early text on yoga that provides
-            description of Yoga techniques and its benefits. Two of its Sanskrit
-            palm-leaf manuscripts have been dated, one is from the early
-            10th-century CE and another more{" "}
+          I take my word very seriously. Completing my yoga training here was absolutely the right move. I entered wanting to understand the cultural and philosophical context of yoga and I received an abundant, extensive curriculum. This was a safe space for me to explore/refine my spirituality and truly study. 
           </h3>
           <div
             className=" my-3

@@ -1,9 +1,13 @@
 import React from "react";
+import { useState } from "react/cjs/react.development";
 
 const Contact = () => {
 
+  const [confirm,setConfirm]=useState("")
+
     const handleOnsubmit=e=>{
         e.preventDefault()
+        setConfirm("We will contact with you soon!")
         
     }
   return (
@@ -55,7 +59,10 @@ const Contact = () => {
               >
                 Send
               </button>
+
+              
             </div>
+            <p className="font-medium text-green-600">{confirm}</p>
           </div>
         </div>
       </form>
