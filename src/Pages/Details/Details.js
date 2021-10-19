@@ -17,7 +17,7 @@ const Details = () => {
                     <h1 className="text-2xl md:text-5xl my-2 md:my-10 font-medium">{singleDetails[0]?.name}</h1>
                     <h2 className="font-medium text-lg">Mentors : {singleDetails[0]?.teacher}</h2>
                     <h2 className="text-lg">Catagory : {singleDetails[0]?.catagory}</h2>
-                    <p className="my-4">The practice of yoga has been thought to date back to pre-vedic Indian traditions; possibly in the Indus valley civilization around 3000 BCE. Yoga is mentioned in the Rigveda and referenced in the Upanishads,. Although, yoga most likely developed as a systematic study around the 5th centuries.</p>
+                    <p className="my-4">{singleDetails[0]?.details}</p>
                 </div>
                 <div className="md:col-span-1 shadow-lg p-6">
                     <h2 className="md:text-3xl text-xl font-medium">Price : {singleDetails[0]?.price}</h2>
