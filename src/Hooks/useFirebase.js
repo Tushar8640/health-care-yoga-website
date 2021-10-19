@@ -22,14 +22,17 @@ const useFirebase = () => {
   const auth = getAuth();
   const googleProvider = new GoogleAuthProvider();
 
+  // google login 
   const loginWithGoogle = () => {
     return signInWithPopup(auth, googleProvider) 
   };
 
+  // login with email and pass 
   const loginWithEmailPass = () => {
     return signInWithEmailAndPassword(auth, email, password);
   };
 
+  // registration with email and pass 
   const registration = () => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
@@ -47,6 +50,7 @@ const useFirebase = () => {
       });
   };
 
+  // update display name 
   const updateName = () => {
     updateProfile(auth.currentUser, {
       displayName: name,
@@ -62,6 +66,7 @@ const useFirebase = () => {
       });
   };
 
+  // handle log out 
   const logOut = () => {
     signOut(auth)
       .then(() => {

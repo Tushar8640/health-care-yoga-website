@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 
 
 const useServices =()=>{
+
+  // get all services from json file 
     const [services, setServices] = useState([]);
 
     useEffect(() => {

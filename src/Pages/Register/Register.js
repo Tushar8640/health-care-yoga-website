@@ -4,7 +4,8 @@ import { useState } from "react";
 import useFirebase from "../../Hooks/useFirebase";
 
 const Register = () => {
-  const [confirm, setConfirm] = useState("");
+
+  // handle registeration form 
   const { setEmail, setPassword, registration, user, setName, error } =
     useFirebase();
   const handleRegistration = (e) => {
@@ -76,7 +77,7 @@ const Register = () => {
             <br />
             <p className="text-red-600">{error}</p>
             <Link to="/login">
-              <p className="mt-3 font-medium">Already have account?</p>
+              <p className="mt-3 font-medium text-red-400">Already have account?</p>
             </Link>
           </form>
         </div>

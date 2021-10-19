@@ -4,6 +4,8 @@ import useAuth from "../../Hooks/useAuth";
 import useFirebase from "../../Hooks/useFirebase";
 
 const Login = () => {
+
+  // handle login with email pass and with login 
   const {
     user,
     loginWithGoogle,
@@ -20,6 +22,8 @@ const Login = () => {
   const redirect_url = location.state?.from || "/home";
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // email and pass login 
     loginWithEmailPass()
       .then((result) => {
         setUser(result.user);
@@ -31,6 +35,7 @@ const Login = () => {
       });
     console.log(user);
   };
+  // login with gmail 
   const handleLoginWithGoogle = () => {
     loginWithGoogle()
       .then((result) => {
