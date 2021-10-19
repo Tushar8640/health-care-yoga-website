@@ -7,7 +7,9 @@ const Services = () => {
   // console.log(services)
   return (
     <div className="container m-auto gap-3 my-5 p-6">
-      <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3">
+      <h1 className="text-center md:my-10  md:ty-14 text-2xl md:text-5xl font-medium">Popular Courses</h1>
+      
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-4  md:grid-cols-3">
         {services.map((service) => (
           <SingleService service={service}></SingleService>
         ))}

@@ -65,9 +65,6 @@ const Register = () => {
             >
               SignUp
             </button>
-            <button className=" text-white font-semibold bg-gray-500 px-3 py-1 rounded shadow">
-              Google
-            </button>
             <br />
             <Link to="/login">
               <p className="mt-3">Already have account?</p>

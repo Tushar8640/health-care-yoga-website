@@ -5,8 +5,9 @@ import img3 from "../../images/testimonial3.jpg";
 
 const Testimonial = () => {
   return (
-    <div className="container my-14 m-auto w-9/12">
-      <h1>Testimonial</h1>
+    <div className="container md:my-20 m-auto w-9/12">
+      <h1 className="text-center my-6 md:ty-14 text-2xl md:text-5xl font-medium">Testimonial</h1>
+      <h2 className="text-center my-4">What prople say about us</h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         {/* single testimonia */}
         <div className="shadow-lg p-4">
