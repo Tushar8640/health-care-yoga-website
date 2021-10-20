@@ -11,7 +11,7 @@ const About = () => {
             <div className="mb-4">
               <h3 className="text-xl font-semibold">About Our School</h3>
               <h2 className="mr-8 w-full md:w-1/3 text-3xl font-bold leading-9">
-                How we become Yoku
+                How we become Yoga Fit
               </h2>
             </div>
             <div className="mb-16">
@@ -27,9 +27,9 @@ const About = () => {
               <Link to="/">
                 <button
                   type="button"
-                  class="py-2 md:py-3 px-4 md:px-5 md:mt-6 mt-3  bg-gray-600 hover:bg-gray-700 focus:ring-gray-500 focus:ring-offset-pink-200 text-white transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full"
+                  className="py-2 md:py-3 px-4 md:px-5 md:mt-6 mt-3  bg-gray-600 hover:bg-gray-700 focus:ring-gray-500 focus:ring-offset-pink-200 text-white transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full"
                 >
-                  Bye Courses
+                  Buy Courses
                 </button>
               </Link>
             </div>
