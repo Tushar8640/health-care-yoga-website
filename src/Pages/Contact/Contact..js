@@ -1,13 +1,9 @@
 import React from "react";
-import { useState } from "react/cjs/react.development";
+
 
 const Contact = () => {
 
 
-    const handleOnsubmit=e=>{
-        e.preventDefault()
-        
-    }
   return (
     <div className="container mx-auto my-10">
      <section className="w-full max-w-2xl px-6 py-4 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800">

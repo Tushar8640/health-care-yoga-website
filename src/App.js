@@ -1,9 +1,8 @@
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Nav from "./Components/Nav/Nav";
 import About from "./Pages/About/About";
-import Blog from "./Pages/Contact/Contact.";
 import Login from "./Pages/Login/Login";
 import Footer from "./Components/Footer/Footer";
 import Register from "./Pages/Register/Register";

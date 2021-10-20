@@ -18,17 +18,20 @@ const useFirebase = () => {
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   const [error, setError] = useState("");
+  const [isLoading ,setIsloading] =useState(true)
 
   const auth = getAuth();
   const googleProvider = new GoogleAuthProvider();
 
   // google login 
   const loginWithGoogle = () => {
+    setIsloading(true)
     return signInWithPopup(auth, googleProvider) 
   };
 
   // login with email and pass 
   const loginWithEmailPass = () => {
+    setIsloading(true)
     return signInWithEmailAndPassword(auth, email, password);
   };
 
@@ -43,7 +46,7 @@ const useFirebase = () => {
         // ...
       })
       .catch((error) => {
-        const errorCode = error.code;
+        
         const errorMessage = error.message;
         setError(errorMessage);
         // ..
@@ -68,6 +71,7 @@ const useFirebase = () => {
 
   // handle log out 
   const logOut = () => {
+    setIsloading(true)
     signOut(auth)
       .then(() => {
         setUser([]);
@@ -77,7 +81,8 @@ const useFirebase = () => {
       .catch((error) => {
         setError(error.message);
         // An error happened.
-      });
+      })
+      .finally(()=>setIsloading(false));
     
   };
 
@@ -90,6 +95,7 @@ const useFirebase = () => {
         // User is signed out
         // ...
       }
+      setIsloading(false)
     });
   }, []);
   return {
@@ -104,6 +110,8 @@ const useFirebase = () => {
     loginWithEmailPass,
     setError,
     error,
+    setIsloading,
+    isLoading
   };
 };
 

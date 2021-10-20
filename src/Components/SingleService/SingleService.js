@@ -7,7 +7,7 @@ const SingleService = ({service}) => {
         className=" hover:shadow-lg w-8/9  text-center p-3  rounded-lg transition duration-300"
         style={{ maxHeight: "580px" }}
       >
-        <img className="w-3/5 text-center m-auto" src={service?.picture} />
+        <img className="w-3/5 text-center m-auto" src={service?.picture} alt="" />
         <h3 className="text-xl font-semibold text-center">{service?.name}</h3>
         <h1>{service?.teacher}</h1>
         <h3 className="text-gray-600 pt-3 text-sm text-center">

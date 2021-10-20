@@ -14,7 +14,8 @@ const Login = () => {
     setError,
     loginWithEmailPass,
     setUser,
-    error
+    error,
+    setIsloading
   } = useAuth();
 
   const location = useLocation();
@@ -32,9 +33,11 @@ const Login = () => {
       })
       .catch((error) => {
         setError(error.message);
-      });
-    console.log(user);
+      })
+      .finally(()=>setIsloading(false));
+    // console.log(user);
   };
+  
   // login with gmail 
   const handleLoginWithGoogle = () => {
     loginWithGoogle()
@@ -49,7 +52,8 @@ const Login = () => {
         const errorMessage = error.message;
         setError(errorMessage);
         // ...
-      });
+      })
+      .finally(()=>setIsloading(false));
   };
   const getEmail = (e) => {
     setEmail(e.target.value);
